@@ -1,0 +1,34 @@
+#include <cstdio>
+
+class Complex
+{
+
+	double rN; // real Number
+	double iN; // imaginary Number
+	
+	public:
+	void input( );
+	void print( );
+	void add (Complex a, Complex b);
+	
+};
+
+void Complex::input() {scanf("%lf %lf", &rN, &iN); }
+void Complex::print() {printf(" %4.2f + %4.2fi\n", rN, iN);}
+void Complex::add(Complex a, Complex b) {
+	 rN = a.rN + b.rN;
+	 iN = a.iN + b.iN;
+}
+
+int main(void)
+{
+	Complex a, b, c;  // 객체생성
+	a.input(); // a값을 입력 받습니다.
+	b.input();
+	c.add(a,b);
+	a.print();
+	b.print();
+	c.print();
+	
+	return 0;
+}
