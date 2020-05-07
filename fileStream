@@ -1,0 +1,33 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+int main(void)
+{
+	int x=3;
+	int y=5;
+	char sentence[100];
+	
+	ofstream f1("tempFile.txt"); // file open to write
+	if (f1) {
+			f1 << x << " " << y << endl;
+			f1 << "GAME OVER! \n" ;
+		}
+		
+		f1.close();
+
+		ifstream f2("tempFile.txt");
+		if (f2) {
+				f2>> x >> y;
+				f2 >> sentence;
+				cout << "x= " << x << "y = " << y << endl;
+				cout << sentence << endl;
+			}
+
+			f2.close();
+
+
+	return 0;
+}
