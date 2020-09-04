@@ -1,3 +1,9 @@
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+:+1:
+
+:wink:
+
+:scream:
+
+:phone:
+
+[emoticon](https://www.webfx.com/tools/emoji-cheat-sheet/)
